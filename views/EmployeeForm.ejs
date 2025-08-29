@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-tomato">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <%nav.forEach((nav)=>{%>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=<%=nav.link%>><%=nav.name%></a>
+                        </li>
+                  <%})%>
+            </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h5 class="text-center mb-5">Add employee</h5>
+                <form method="POST" action="/api/add">
+                <div class="mb-3">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="eName" id="" aria-describedby="">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Designation</label>
+                    <input type="text" class="form-control" name="eDesignation" id="">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Salary</label>
+                    <input type="text" class="form-control" name="eSalary" id="">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Location</label>
+                    <input type="text" class="form-control" name="eLocation" id="">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
