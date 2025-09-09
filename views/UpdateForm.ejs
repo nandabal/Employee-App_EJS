@@ -27,22 +27,22 @@
     <div class="container">
         <div class="row">
             <h5 class="text-center mb-5">student form</h5>
-                <form method="POST" action="/api/update/<%= data[id].id %>">
+                <form method="POST" action="/api/update/<%= employee._id %>">
                 <div class="mb-3">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" value="<%=data[id].eName%>" class="form-control" name="eName" id="" aria-describedby="">
+                    <input type="text" value="<%=employee.eName%>" class="form-control" name="eName" id="" aria-describedby="">
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Designation</label>
-                    <input type="text" value="<%=data[id].eDesignation%>" class="form-control" name="eDesignation" id="">
+                    <input type="text" value="<%=employee.eDesignation%>" class="form-control" name="eDesignation" id="">
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Salary</label>
-                    <input type="text" value="<%=data[id].eSalary%>" class="form-control" name="eSalary" id="">
+                    <input type="text" value="<%=employee.eSalary%>" class="form-control" name="eSalary" id="">
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Location</label>
-                    <input type="text" value="<%=data[id].eLocation%>" class="form-control" name="eLocation" id="">
+                    <input type="text" value="<%=employee.eLocation%>" class="form-control" name="eLocation" id="">
                 </div>
                 <button type="submit" class="btn">Submit</button>
             </form>

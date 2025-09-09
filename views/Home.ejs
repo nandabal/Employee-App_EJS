@@ -38,8 +38,8 @@
                             <p class="card-text">
                                 <%=data[i].eDesignation%>
                             </p>
-                            <a class="btn bg-tomato" href='/api/update-form/<%=i%>'>Update</a>
-                            <a class="btn bg-tomato" href='/api/delete/<%= i %>'>Delete</a>
+                            <a class="btn bg-tomato" href='/api/update-form/<%=data[i]._id%>'>Update</a>
+                            <a class="btn bg-tomato" href='/api/delete/<%= data[i]._id %>'>Delete</a>
                         </div>
                     </div>
                 </div>
